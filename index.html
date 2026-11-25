@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+        content="A USF team analysis of Citi's transformation roadmap, governance, and quarterly review design.">
+  <title>About Us | Roadmaps &amp; Enterprise Systems</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #f4f6fa;
+      color: #18283c;
+      font: 16px/1.7 system-ui, sans-serif;
+    }
+
+    header {
+      background: #102c4b;
+      color: white;
+      padding: 44px max(5vw, 20px);
+    }
+
+    header h1 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.15;
+      margin: 12px 0;
+    }
+
+    header p { max-width: 850px; color: #dae6f3; }
+
+    .eyebrow {
+      color: #b6d2ec;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav { display: flex; gap: 22px; flex-wrap: wrap; }
+    nav a { color: white; }
+    nav a[aria-current="page"] { font-weight: 700; }
+
+    main {
+      max-width: 1240px;
+      margin: auto;
+      padding: 28px 5vw 60px;
+    }
+
+    h2 { margin-top: 36px; }
+    h3 { line-height: 1.35; }
+    a { color: #135a92; }
+    a:focus-visible { outline: 3px solid #bc8721; outline-offset: 4px; }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .profile {
+      background: white;
+      border: 1px solid #dbe2eb;
+      border-radius: 12px;
+      padding: 24px;
+    }
+
+    .portrait {
+      width: 120px;
+      height: 150px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 10px;
+      display: block;
+      margin-bottom: 18px;
+    }
+
+    .initials {
+      display: grid;
+      place-items: center;
+      width: 80px;
+      height: 80px;
+      background: #dfeaf4;
+      color: #102c4b;
+      border-radius: 50%;
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .role {
+      color: #345879;
+      font-weight: 650;
+      font-size: 14px;
+    }
+
+    .pending { color: #77520b; }
+
+    .benefits li { margin-bottom: 14px; }
+
+    .note {
+      border-left: 4px solid #bc8721;
+      background: #fff8e7;
+      padding: 16px 20px;
+      margin-top: 28px;
+    }
+
+    footer {
+      padding: 22px 5vw;
+      color: #52657a;
+      border-top: 1px solid #dbe2eb;
+      font-size: 14px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: -9999px;
+    }
+
+    .skip-link:focus {
+      position: fixed;
+      left: 16px;
+      top: 16px;
+      background: white;
+      padding: 10px;
+      z-index: 10;
+    }
+
+    @media (max-width: 850px) {
+      .team-grid { grid-template-columns: 1fr; }
+      main { padding: 20px; }
+    }
+
+    @media print {
+      body { background: white; }
+      header { background: white; color: black; padding: 0; }
+      header p, .eyebrow { color: black; }
+      nav, .skip-link { display: none; }
+      main { max-width: none; padding: 0; }
+      .team-grid { grid-template-columns: 1fr; }
+      .profile { break-inside: avoid; margin-bottom: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header>
+    <div class="eyebrow">USF · Group Activity · Citi Case Analysis</div>
+    <h1>Roadmaps &amp; Enterprise Systems</h1>
+    <p>
+      A transformation roadmap connecting trusted reporting data,
+      wholesale credit workflows, decision rights, and executive review.
+    </p>
+
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">About Us</a>
+      <a href="roadmap.html">Transformation Roadmap</a>
+      <a href="raci.html">Governance RACI</a>
+      <a href="dashboard.html">QBR Dashboard</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="team-heading">
+      <h2 id="team-heading">1. The team</h2>
+
+      <div class="team-grid">
+        <article class="profile">
+          <div class="initials" aria-label="Carlos Cuadra initials">CC</div>
+          <h3>Carlos Cuadra Rabines</h3>
+          <p class="role">
+            Member A — Roadmap Sequencer<br>
+            Member D — Site Editor
+          </p>
+          <p>
+            Carlos is an Assistant Vice President in AML Intelligence
+            and Governance at Citi and a graduate student in USF’s
+            M.S. in AI in Business and Digital Transformation.
+            His experience coordinating cross-functional governance
+            materials shaped the project’s emphasis on clear ownership,
+            escalation, and evidence.
+            He owns the roadmap sequencing, source log, About Us page,
+            repository coordination, and consistency review across
+            the team’s deliverables.
+          </p>
+        </article>
+
+        <article class="profile">
+          <img class="portrait"
+               src="images/marggie-robles.jpg"
+               alt="Marggie Robles"
+               width="120"
+               height="150">
+
+          <h3>Marggie Robles</h3>
+          <p class="role">Member B — Governance Designer</p>
+          <p>
+            Marggie is a Vice President in Services Technology for Citi's
+            Custody business in Tampa and a graduate student in USF's
+            M.S. in AI in Business and Digital Transformation.
+            With a degree in Cybersecurity and nine years in Citi
+            Operations before moving to Technology in 2017, where she
+            has led her teams' adoption of AI tools, she brings a
+            controls-first view of how new systems change established
+            workflows.
+            She owned the team's RACI matrix: she decided who is
+            Accountable for each of the seven recurring transformation
+            decisions and how each assignment is enforced.
+          </p>
+        </article>
+
+        <article class="profile">
+          <div class="initials" aria-label="Shawn Campbell initials">SC</div>
+          <h3>Shawn Campbell</h3>
+          <p class="role">Member C — Dashboard Designer</p>
+          <p class="pending">
+            Professional bio awaiting Shawn’s submission.
+          </p>
+          <p>
+            Shawn’s assigned contribution is the one-page QBR dashboard,
+            including its metrics, phase-level status, overall health
+            signal, and decisions required this quarter.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="audience-heading">
+      <h2 id="audience-heading">2. Target audience</h2>
+      <p>
+        This site is designed for a transformation portfolio lead at a
+        large multinational bank who must recommend whether to release
+        the next wave of funding for regulatory reporting and North
+        American wholesale loan modernization when data quality,
+        operating readiness, and delivery capacity compete for attention.
+      </p>
+    </section>
+
+    <section aria-labelledby="benefits-heading">
+      <h2 id="benefits-heading">3. Benefits to that audience</h2>
+
+      <ul class="benefits">
+        <li>
+          <a href="roadmap.html">Transformation Roadmap:</a>
+          identify which deployment or expansion to defer when a data
+          foundation or pilot acceptance gate fails, and trace the
+          downstream consequences.
+        </li>
+        <li>
+          <a href="raci.html">Governance RACI:</a>
+          identify the accountable decision-maker for recurring funding,
+          architecture, data, vendor, prioritization, and cutover choices,
+          along with who must contribute before a decision is made.
+        </li>
+        <li>
+          <a href="dashboard.html">QBR Dashboard:</a>
+          use the quarterly review to connect initiative performance
+          and organizational readiness to the governance decisions
+          leadership must resolve.
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="novelty-heading">
+      <h2 id="novelty-heading">4. Novelty statement</h2>
+      <p>
+        We organize this case around two operating paths: trusted
+        regulatory reporting and North American wholesale loan
+        processing. On the roadmap, I4 and I6 must both clear acceptance
+        before I7 scales reporting, while I5 must prove a bounded
+        workflow before I8 migrates the scoped loan portfolio. This
+        makes the consequence of a failed gate visible: the affected
+        rollout pauses rather than allowing progress elsewhere to
+        substitute for its evidence. Carlos’s AML governance experience
+        and Marggie’s Operations and Technology background inform our
+        emphasis on ownership, control handoffs, and exception
+        escalation. The source log separates Citi’s disclosed progress
+        from our proposed quarters, pilot scopes, and acceptance
+        thresholds. We also distinguish initial deployment from later
+        expansion so that a successful pilot cannot count as enterprise
+        completion. These choices give the reader a concrete sequencing
+        argument to challenge and a consistent set of eight work packages
+        against which to assess governance and performance measures.
+      </p>
+    </section>
+
+    <aside class="note" aria-label="Project assembly status">
+      <strong>Project assembly in progress.</strong>
+      Shawn’s professional bio and dashboard contribution are pending.
+      The team will complete its final consistency review and confirm
+      the novelty statement before submission.
+    </aside>
+  </main>
+
+  <footer>
+    Academic analysis based on public sources. This is not an official
+    Citi publication. The proposed sequencing, scopes, and acceptance
+    thresholds are the team’s analytical design.
+  </footer>
+</body>
+</html>
